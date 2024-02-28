@@ -1,0 +1,11 @@
+@use './reset' as *;
+@use './variables' as *;
+@use './header';
+@use './grid';
+@use './main';
+@use './footer';
+
+body {
+  background-color: $primary-color;
+  color: $white-color;
+}

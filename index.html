@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Baheer Wardak Portfolio</title>
-    <link rel="stylesheet" href="./styles.scss" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+
     <header class="head-section">
       <!--Header section to include title name, navigation bar with links, as well as subheader and description text below-->
-      <h1 class="head-section__name">Baheer Wardak</h1>
+      <h1 class="head-section__name">Baheer <span class="head-section__name--color">Wardak</span></h1>
       <nav class="head-section__navigation">
         <!--Navigation to not display on mobile sizing-->
         <ul>
@@ -40,7 +41,7 @@
       <section class="about">
         <h3 class="about__title">ABOUT</h3>
         <img
-          src="./project-images/placeholder.webp"
+          src="./project-footer-images/placeholder.webp"
           alt=""
           class="about__image"
         />
@@ -114,20 +115,23 @@
       <section class="portfolio">
         <h3 class="portfolio__title">PORTFOLIO</h3>
         <img
-          src="./project-images/placeholder.webp"
+          src="./project-footer-images/placeholder.webp"
           alt=""
           class="portfolio__project portfolio__project--one"
         />
+        <p class="portfolio_text portfolio_text--one">Project 1</p>
         <img
-          src="./project-images/placeholder.webp"
+          src="./project-footer-images/placeholder.webp"
           alt=""
           class="portfolio__project portfolio__project--two"
         />
+        <p class="portfolio_text portfolio_text--two">Project 2</p>
         <img
-          src="./project-images/placeholder.webp"
+          src="./project-footer-images/placeholder.webp"
           alt=""
           class="portfolio__project portfolio__project--three"
         />
+        <p class="portfolio_text portfolio_text--three">Project 3</p>
       </section>
 
       <section class="contact">
@@ -136,7 +140,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <img
         src="./project-footer-images/linkedin.svg"
         alt="button with link to Baheers linkedin profile"

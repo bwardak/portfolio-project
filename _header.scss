@@ -1,0 +1,13 @@
+@use "./variables" as *;
+
+.head-section {
+  .head-section__name {
+    .head-section__name--color {
+      color: $secondary-color;
+    }
+  }
+
+  .head-section__navigation {
+    display: none;
+  }
+}
