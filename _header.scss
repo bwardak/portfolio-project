@@ -2,18 +2,19 @@
 
 .head-section {
   .head-section__name {
-                            //Put name in the center, added Cormorant font
+    //Put name in the center, added Cormorant font
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: $header-font;
     font-weight: 700;
 
     .head-section__name--color {
-      color: $secondary-color;     //Pleasing color theme with second name
+      color: $secondary-color; //Pleasing color theme with second name
     }
   }
 
-  .head-section__navigation {      //Mobile version doesnt have navigation buttons
+  .head-section__navigation {
+    //Mobile version doesnt have navigation buttons
     display: none;
   }
 
@@ -24,9 +25,10 @@
   }
 
   .head-section__info {
-    font-family: $paragraph-font;   //TODO: find more suitable font
+    font-family: $paragraph-font; //TODO: find more suitable font
     text-align: left;
     font-size: 14px;
     line-height: 1.5;
+    margin: 30px 0;
   }
 }

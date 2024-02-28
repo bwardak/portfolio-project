@@ -1,55 +1,64 @@
-@use './variables' as *;
+@use "./variables" as *;
 
 .about {
-
-  .about__title{
-  font-family: $header-font;
-  font-size: 1.5rem;
+  .about__title {
+    font-family: $header-font;
+    font-size: 2rem;
+    font-weight: 600;
   }
 
   .about__image {
-    width: 270px;    //Ensure image takes up full centre of its row
-    height: 350px;   //Change to "width: 100;" once I replace placeholder
+    width: 100%; //Ensure image takes up full centre of its row
+    height: auto; //Change to "width: 100;" once I replace placeholder
+    margin: 19px 0;
   }
 
   .about__info--paragraph-1 {
-  font-family: $paragraph-font;
-  font-size: 14px;
-  line-height: 1.5;
+    font-family: $paragraph-font;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 30px;
   }
 
   .about__info--paragraph-2 {
-  font-family: $paragraph-font;
-  font-size: 14px;
-  line-height: 1.5;
+    font-family: $paragraph-font;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 30px;
   }
-  
 }
 
-
-.skills {        //Skills section not in mobile sizing version
+.skills {
+  //Skills section not in mobile sizing version
   display: none;
 }
 
 .portfolio {
   .portfolio__title {
     font-family: $header-font;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin: 40px 0 25px;
   }
 
   .portfolio__text {
     font-family: $header-font;
     font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+
+  .portfolio__project {
+    width: 100%;
+    height: auto;
   }
 }
 
 .contact {
-
   .contact__title {
     font-family: $header-font;
     font-size: 64px;
     font-weight: 300;
     text-align: center;
+    margin-top: 35px;
   }
 
   .contact__button {
