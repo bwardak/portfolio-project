@@ -1,3 +1,9 @@
-$primary-color: #49281a;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+$primary-color: #49281a;  //Coffee theme
 $secondary-color: #DFB78C;
-$white-color: #fff;
+$white-color: #FFFFFF;
+$black-color: #000000;
+
+$header-font: "Cormorant", serif;  //Font for headers
+$paragraph-font: "Arial", serif;   //Font for other text

@@ -1,5 +1,66 @@
+@use './variables' as *;
+
+.about {
+
+  .about__title{
+  font-family: $header-font;
+  font-size: 1.5rem;
+  }
+
+  .about__image {
+    width: 270px;    //Ensure image takes up full centre of its row
+    height: 350px;   //Change to "width: 100;" once I replace placeholder
+  }
+
+  .about__info--paragraph-1 {
+  font-family: $paragraph-font;
+  font-size: 14px;
+  line-height: 1.5;
+  }
+
+  .about__info--paragraph-2 {
+  font-family: $paragraph-font;
+  font-size: 14px;
+  line-height: 1.5;
+  }
+  
+}
 
 
-.skills {
+.skills {        //Skills section not in mobile sizing version
   display: none;
+}
+
+.portfolio {
+  .portfolio__title {
+    font-family: $header-font;
+    font-size: 1.5rem;
+  }
+
+  .portfolio__text {
+    font-family: $header-font;
+    font-size: 1.5rem;
+  }
+}
+
+.contact {
+
+  .contact__title {
+    font-family: $header-font;
+    font-size: 64px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .contact__button {
+    border: 1px solid $white-color;
+    background-color: $primary-color;
+    color: $white-color;
+    width: 225px;
+    height: 60px;
+    font-family: $paragraph-font;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 auto 60px;
+  }
 }

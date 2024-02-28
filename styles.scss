@@ -6,6 +6,11 @@
 @use './footer';
 
 body {
-  background-color: $primary-color;
+  background-color: $primary-color;  //Coffee theme
   color: $white-color;
 }
+
+header,
+main {
+  padding: 0 25px;  //Added padding to whole body as I was repeatedly adding 15px padding to each element
+}                   //Did not add to footer as footer must cover the entire width

@@ -2,12 +2,31 @@
 
 .head-section {
   .head-section__name {
+                            //Put name in the center, added Cormorant font
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: $header-font;
+    font-weight: 700;
+
     .head-section__name--color {
-      color: $secondary-color;
+      color: $secondary-color;     //Pleasing color theme with second name
     }
   }
 
-  .head-section__navigation {
+  .head-section__navigation {      //Mobile version doesnt have navigation buttons
     display: none;
+  }
+
+  .head-section__subheader {
+    font-family: $header-font;
+    font-size: 4rem;
+    font-weight: 300;
+  }
+
+  .head-section__info {
+    font-family: $paragraph-font;   //TODO: find more suitable font
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
   }
 }

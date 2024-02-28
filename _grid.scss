@@ -1,7 +1,7 @@
 
 
-body {
-  display: grid;
+body {                        //Nested grid layout, first grid has 3 rows, header, main and footer.
+  display: grid;              //Gave these elements grids of their own in case positioning of items needs to change
   grid-template-rows: repeat(3, auto);
   grid-template-areas: 
   'header'
@@ -31,7 +31,7 @@ body {
   .footer {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr; //brings the logos closer due to code in _footer.scss
   }
 
 }
