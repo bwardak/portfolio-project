@@ -73,3 +73,69 @@
     margin: 0 auto 60px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding-right: 20px;
+  }
+
+  .about {
+    .about__title {
+      margin: 32px 0;
+    }
+
+    .about__image {
+      height: 300px;
+      width: auto;
+    }
+
+    .about__info--paragraph-1 {
+      margin: 32px 0 0 50px;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    .about__info--paragraph-2 {
+      margin-top: 31px;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+
+  .skills {
+    display: initial;
+
+    .skills__title {
+      font-family: $header-font;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .skills__info {
+      font-family: $paragraph-font;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-top: 30px;
+      font-weight: 300;
+    }
+
+    .skills__svg {              //give svgs a grid 
+      fill: $secondary-color;
+    }
+  }
+
+  .portfolio {
+      .portfolio__title {
+        font-size: 2rem; //REMOVE/CHANGE THIS LINE LATER
+      }
+
+      .portfolio__project {
+        width: auto;
+        height: auto;
+      }
+
+      .portfolio__text {
+        margin: 10px 0;
+      }
+    }
+}

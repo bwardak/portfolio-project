@@ -1,12 +1,11 @@
-
-
-body {                        //Nested grid layout, first grid has 3 rows, header, main and footer.
-  display: grid;              //Gave these elements grids of their own in case positioning of items needs to change
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas: 
-  'header'
-  'main'
-  'footer';
+body {
+  //Nested grid layout, first grid has 3 rows, header, main and footer.
+  display: grid; //Gave these elements grids of their own in case positioning of items needs to change
+  grid-template-rows: repeat(3, auto);    //Global grid that keeps the semantic elements in what will 
+  grid-template-areas:                    //their set layout on any screen size
+    "header"
+    "main"
+    "footer";
 
   .head-section {
     display: grid;
@@ -33,6 +32,90 @@ body {                        //Nested grid layout, first grid has 3 rows, heade
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 1fr 2fr; //brings the logos closer due to code in _footer.scss
   }
-
 }
 
+@media screen and (min-width: 768px) {
+  .head-section {
+    grid-template: repeat(3, auto)/ repeat(5, 1fr);
+
+    .head-section__title {
+      grid-area: 1 / 1/ 2 / 4;
+    }
+
+    .head-section__navigation {
+      grid-area: 1 / 4 / 2 / 6;
+    }
+
+    .head-section__subheader {
+      grid-area: 2 / 1 / 3 / 6;
+    }
+
+    .head-section__info {
+      grid-area: 3 / 1 / 4 / 4;
+    }
+  }
+
+  .about {
+    grid-template: repeat(3, auto) / repeat(2, auto);
+
+    .about__title {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .about__image {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .about__info--paragraph-1 {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .about__info--paragraph-2 {
+      grid-area: 3 / 1 / 4 / 3;
+    }
+  }
+
+  .portfolio {
+    grid-template: repeat(5, 35px) / repeat(2, 1fr);
+
+    .portfolio__title {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+    
+    .portfolio__project--one {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .portfolio__project--two {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .portfolio__text--one {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .portfolio__text--two {
+      grid-area: 3 / 2 / 4 / 3;
+    }
+
+    // .portfolio__project--three {
+    //   grid-area: 4 / 1 / 5 / 2;
+    // }
+
+    .portfolio__text--three {
+      grid-area: 4 / 2 / 5 / 3;
+    }
+
+    .portfolio__project--four {
+      grid-area: 4 / 2 / 5 / 3;
+    }
+
+    .portfolio__text--three {
+      grid-area: 5 / 1 / 6 / 2;
+    }
+
+    .portfolio__text--four {
+      grid-area: 5 / 2 / 6 / 3;
+    }
+}
+}

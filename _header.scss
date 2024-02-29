@@ -30,5 +30,66 @@
     font-size: 14px;
     line-height: 1.5;
     margin: 30px 0;
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .head-section {
+    padding-right: 0;   //Removing padding on the right here in order to make my navigation bar background reach the end of my screen
+                        //but keep the header/main padding on the right and left still existent.
+    .head-section__title {
+      height: 100%;
+      width: 100%; 
+
+    .head-section__name {
+      height: calc(100% - 40px);
+      font-size: 2.5rem;
+      text-align: left;
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      
+    }
+    }
+    .head-section__navigation {
+      height: 100%;
+      width: 100%;
+      display: block; 
+      background-color: $secondary-color;
+     
+
+      .head-section__nav-list {
+        height: calc(100% - 40px);
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 0; //Removing excess padding on left when this flex was called. Preferred this spacing
+        align-items: center;
+        margin: 20px 0;
+        
+
+        .head-section__nav-item {
+          margin: 0 10px; //Margin to add space as nav bar li elements were right next to each other on flex
+          align-self: center;
+
+          .head-section__nav-link {
+            text-decoration: none;
+            color: $primary-color;
+            font-family: $paragraph-font;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+
+    .head-section__subheader {
+      margin: 50px 20px 30px 30px;  //Increase margin size on top to make better looking spacing
+    }
+
+    .head-section__info {
+      margin: 20px 30px 30px ; //Reduce margin size on top as 60px is too much space
+      font-size: 16px;
+    }
   }
 }
