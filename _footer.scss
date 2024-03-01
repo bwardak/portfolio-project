@@ -5,7 +5,7 @@
   width: 100%;
   height: 150px;
 
-  .footer__image {
+  &__image {
     width: auto;
     height: 70px;
     background-color: $secondary-color;
@@ -19,8 +19,8 @@
     
 
     &--one,                   //All 3 images need to 'align-self: center;' grouping the selectors 
-      &--two,                   //allows me to assign to all three. justify-self:center is for --two, and
-      &--three {
+    &--two,                   //allows me to assign to all three. justify-self:center is for --two, and
+    &--three {
       //the 'justify-self:' for --one and --three can be changed after due to specificity
       justify-self: center;
       align-self: center;
@@ -33,7 +33,7 @@
     &--three {
       justify-self: left;
       border-radius: 50px;
-     }
+    }
 
      &:hover {
         border: 1px none $black-color;
@@ -45,15 +45,8 @@
         filter: grayscale(100%); 
         filter: invert(1);
         background-color: white;
+      } 
+
     }
-
   }
-
-  .footer__image:hover {
-    border: 1px none $black-color;
-    background-color: white;
-    border-radius: 50px;
-    filter: invert(1);
-  }
-}
 }

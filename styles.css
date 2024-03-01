@@ -314,24 +314,24 @@ template {
   display: none;
 }
 
-.head-section .head-section__name {
+.head-section__name {
   text-align: center;
   font-size: 1.3rem;
   font-family: "Cormorant", serif;
   font-weight: 600;
 }
-.head-section .head-section__name--color {
+.head-section__name--color {
   color: #DFB78C;
 }
-.head-section .head-section__navigation {
+.head-section__navigation {
   display: none;
 }
-.head-section .head-section__subheader {
+.head-section__subheader {
   font-family: "Cormorant", serif;
   font-size: 4.5rem;
   font-weight: 300;
 }
-.head-section .head-section__info {
+.head-section__info {
   font-family: "Inter", serif;
   text-align: left;
   font-size: 14px;
@@ -344,11 +344,11 @@ template {
   .head-section {
     padding-right: 0;
   }
-  .head-section .head-section__title {
+  .head-section__title {
     height: 100%;
     width: 100%;
   }
-  .head-section .head-section__title .head-section__name {
+  .head-section__title .head-section__name {
     height: calc(100% - 40px);
     font-size: 2.5rem;
     text-align: left;
@@ -356,13 +356,13 @@ template {
     display: flex;
     align-items: center;
   }
-  .head-section .head-section__navigation {
+  .head-section__navigation {
     height: 100%;
     width: 100%;
     display: block;
     background-color: #DFB78C;
   }
-  .head-section .head-section__navigation .head-section__nav-list {
+  .head-section__navigation .head-section__nav-list {
     height: calc(100% - 40px);
     list-style-type: none;
     display: flex;
@@ -371,27 +371,27 @@ template {
     align-items: center;
     margin: 20px 0;
   }
-  .head-section .head-section__navigation .head-section__nav-list .head-section__nav-item {
+  .head-section__navigation .head-section__nav-list .head-section__nav-item {
     margin: 0 10px;
     align-self: center;
   }
-  .head-section .head-section__navigation .head-section__nav-list .head-section__nav-item .head-section__nav-link {
+  .head-section__navigation .head-section__nav-list .head-section__nav-item .head-section__nav-link {
     text-decoration: none;
     color: #42322b;
     font-family: "Inter", serif;
     font-weight: 300;
   }
-  .head-section .head-section__subheader {
+  .head-section__subheader {
     margin: 50px 20px 30px 30px;
     font-size: 5rem;
   }
-  .head-section .head-section__info {
+  .head-section__info {
     margin: 20px 30px 30px;
     font-size: 16px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .head-section .head-section__subheader {
+  .head-section__subheader {
     font-size: 5.5rem;
     height: 200px;
     margin: 30px 0px;
@@ -399,7 +399,7 @@ template {
     align-items: center;
     padding-left: 40px;
   }
-  .head-section .head-section__info {
+  .head-section__info {
     padding-left: 40px;
     margin: 20px 0;
   }
@@ -435,61 +435,64 @@ body .footer {
   .head-section {
     grid-template: repeat(3, auto)/repeat(5, 1fr);
   }
-  .head-section .head-section__title {
+  .head-section__title {
     grid-area: 1/1/2/4;
   }
-  .head-section .head-section__navigation {
+  .head-section__navigation {
     grid-area: 1/4/2/6;
   }
-  .head-section .head-section__subheader {
+  .head-section__subheader {
     grid-area: 2/1/3/6;
   }
-  .head-section .head-section__info {
+  .head-section__info {
     grid-area: 3/1/4/4;
   }
   .about {
     grid-template: repeat(3, auto)/repeat(2, auto);
   }
-  .about .about__title {
+  .about__title {
     grid-area: 1/1/2/3;
   }
-  .about .about__image {
+  .about__image {
     grid-area: 2/1/3/2;
   }
-  .about .about__info--paragraph-1 {
+  .about__info--paragraph-1 {
     grid-area: 2/2/3/3;
   }
-  .about .about__info--paragraph-2 {
+  .about__info--paragraph-2 {
     grid-area: 3/1/4/3;
   }
   .portfolio {
     grid-template: repeat(5, 35px)/repeat(2, 1fr);
   }
-  .portfolio .portfolio__title {
+  .portfolio__title {
     grid-area: 1/1/2/3;
   }
-  .portfolio .portfolio__project--one {
+  .portfolio__project--one {
     grid-area: 2/1/3/2;
   }
-  .portfolio .portfolio__project--two {
+  .portfolio__project--two {
     grid-area: 2/2/3/3;
   }
-  .portfolio .portfolio__text--one {
+  .portfolio__text--one {
     grid-area: 3/1/4/2;
   }
-  .portfolio .portfolio__text--two {
+  .portfolio__text--two {
     grid-area: 3/2/4/3;
   }
-  .portfolio .portfolio__text--three {
+  .portfolio__project--three {
+    grid-area: 4/1/5/2;
+  }
+  .portfolio__text--three {
     grid-area: 4/2/5/3;
   }
-  .portfolio .portfolio__project--four {
+  .portfolio__project--four {
     grid-area: 4/2/5/3;
   }
-  .portfolio .portfolio__text--three {
+  .portfolio__text--three {
     grid-area: 5/1/6/2;
   }
-  .portfolio .portfolio__text--four {
+  .portfolio__text--four {
     grid-area: 5/2/6/3;
   }
 }
@@ -497,70 +500,70 @@ body .footer {
   body .head-section {
     grid-template: repeat(3, auto)/5% repeat(6, 1fr) 5%;
   }
-  body .head-section .head-section__title {
+  body .head-section__title {
     grid-area: 1/1/2/5;
   }
-  body .head-section .head-section__navigation {
+  body .head-section__navigation {
     grid-area: 1/6/2/9;
   }
-  body .head-section .head-section__subheader {
+  body .head-section__subheader {
     grid-area: 2/1/3/9;
   }
-  body .head-section .head-section__info {
+  body .head-section__info {
     grid-area: 3/1/4/5;
   }
   body .about {
     grid-template: 60px 204px 204px 204px/60% 40%;
     margin-top: 100px;
   }
-  body .about .about__title {
+  body .about__title {
     grid-area: 1/1/2/3;
   }
-  body .about .about__image {
+  body .about__image {
     grid-area: 1/2/5/3;
     place-items: center;
   }
-  body .about .about__info--paragraph-1 {
+  body .about__info--paragraph-1 {
     grid-area: 2/1/3/2;
   }
-  body .about .about__info--paragraph-2 {
+  body .about__info--paragraph-2 {
     grid-area: 3/1/4/2;
   }
   body .skills {
     display: grid;
     grid-template: 1fr 2fr/50px repeat(9, 95px) 50px;
   }
-  body .skills .skills__title {
+  body .skills__title {
     grid-area: 1/1/2/4;
   }
-  body .skills .skills__info {
+  body .skills__info {
     grid-area: 1/4/2/-1;
   }
-  body .skills .skills__svg--one {
+  body .skills__svg--one {
     grid-area: 2/2/3/3;
   }
-  body .skills .skills__svg--two {
+  body .skills__svg--two {
     grid-area: 2/3/3/4;
   }
-  body .skills .skills__svg--three {
+  body .skills__svg--three {
     grid-area: 2/4/3/5;
   }
-  body .skills .skills__svg--four {
+  body .skills__svg--four {
     grid-area: 2/5/3/6;
   }
-  body .skills .skills__svg--five {
+  body .skills__svg--five {
     grid-area: 2/6/3/7;
   }
-  body .skills .skills__svg--six {
+  body .skills__svg--six {
     grid-area: 2/7/3/8;
   }
-  body .skills .skills__svg--seven {
+  body .skills__svg--seven {
     grid-area: 2/8/3/9;
   }
-  body .skills .skills__svg--eight {
+  body .skills__svg--eight {
     grid-area: 2/9/3/10;
   }
-  body .skills .skills__svg--nine {
+  body .skills__svg--nine {
     grid-area: 2/10/3/11;
   }
   body .portfolio {
@@ -568,63 +571,63 @@ body .footer {
     -moz-column-gap: 20px;
          column-gap: 20px;
   }
-  body .portfolio .portfolio__title {
+  body .portfolio__title {
     grid-area: 1/1/2/-1;
   }
-  body .portfolio .portfolio__project--one {
+  body .portfolio__project--one {
     grid-area: 2/1/3/3;
   }
-  body .portfolio .portfolio__project--two {
+  body .portfolio__project--two {
     grid-area: 2/3/3/5;
   }
-  body .portfolio .portfolio__project--three {
+  body .portfolio__project--three {
     grid-area: 2/5/3/7;
   }
-  body .portfolio .portfolio__text--one {
+  body .portfolio__text--one {
     grid-area: 3/1/4/3;
   }
-  body .portfolio .portfolio__text--two {
+  body .portfolio__text--two {
     grid-area: 3/3/4/5;
   }
-  body .portfolio .portfolio__text--three {
+  body .portfolio__text--three {
     grid-area: 3/5/4/7;
   }
-  body .portfolio .portfolio__project--four {
+  body .portfolio__project--four {
     grid-area: 5/1/6/3;
   }
-  body .portfolio .portfolio__project--five {
+  body .portfolio__project--five {
     grid-area: 5/3/6/5;
   }
-  body .portfolio .portfolio__project--six {
+  body .portfolio__project--six {
     grid-area: 5/5/6/7;
   }
-  body .portfolio .portfolio__text--four {
+  body .portfolio__text--four {
     grid-area: 6/1/7/3;
   }
-  body .portfolio .portfolio__text--five {
+  body .portfolio__text--five {
     grid-area: 6/3/7/5;
   }
-  body .portfolio .portfolio__text--six {
+  body .portfolio__text--six {
     grid-area: 6/5/7/7;
   }
 }
-.about .about__title {
+.about__title {
   font-family: "Cormorant", serif;
   font-size: 2rem;
   font-weight: 600;
 }
-.about .about__image {
+.about__image {
   width: 100%;
   height: auto;
   margin: 19px 0;
 }
-.about .about__info--paragraph-1 {
+.about__info--paragraph-1 {
   font-family: "Inter", serif;
   font-size: 14px;
   line-height: 1.5;
   margin-top: 30px;
 }
-.about .about__info--paragraph-2 {
+.about__info--paragraph-2 {
   font-family: "Inter", serif;
   font-size: 14px;
   line-height: 1.5;
@@ -635,47 +638,47 @@ body .footer {
   display: none;
 }
 
-.portfolio .portfolio__title {
+.portfolio__title {
   font-family: "Cormorant", serif;
   font-size: 2rem;
   margin: 40px 0 25px;
 }
-.portfolio .portfolio__text {
+.portfolio__text {
   font-family: "Cormorant", serif;
   font-size: 1.5rem;
   margin-bottom: 50px;
 }
-.portfolio .portfolio__project {
+.portfolio__project {
   width: 100%;
   height: auto;
 }
-.portfolio .portfolio__project--four {
+.portfolio__project--four {
   display: none;
 }
-.portfolio .portfolio__text--four {
+.portfolio__text--four {
   display: none;
 }
-.portfolio .portfolio__project--five {
+.portfolio__project--five {
   display: none;
 }
-.portfolio .portfolio__text--five {
+.portfolio__text--five {
   display: none;
 }
-.portfolio .portfolio__project--six {
+.portfolio__project--six {
   display: none;
 }
-.portfolio .portfolio__text--six {
+.portfolio__text--six {
   display: none;
 }
 
-.contact .contact__title {
+.contact__title {
   font-family: "Cormorant", serif;
   font-size: 64px;
   font-weight: 300;
   text-align: center;
   margin-top: 35px;
 }
-.contact .contact__button {
+.contact__button {
   border: 1px solid #FFFFFF;
   background-color: #42322b;
   color: #FFFFFF;
@@ -691,19 +694,19 @@ body .footer {
   .main {
     padding-right: 20px;
   }
-  .about .about__title {
+  .about__title {
     margin: 32px 0;
   }
-  .about .about__image {
+  .about__image {
     height: 300px;
     width: auto;
   }
-  .about .about__info--paragraph-1 {
+  .about__info--paragraph-1 {
     margin: 32px 0 0 50px;
     font-size: 16px;
     font-weight: 300;
   }
-  .about .about__info--paragraph-2 {
+  .about__info--paragraph-2 {
     margin-top: 31px;
     font-size: 16px;
     font-weight: 300;
@@ -711,35 +714,35 @@ body .footer {
   .skills {
     display: block;
   }
-  .skills .skills__title {
+  .skills__title {
     font-family: "Cormorant", serif;
     font-size: 2rem;
     font-weight: 600;
   }
-  .skills .skills__info {
+  .skills__info {
     font-family: "Inter", serif;
     font-size: 16px;
     line-height: 1.5;
     margin-top: 30px;
     font-weight: 300;
   }
-  .skills .skills__svg {
+  .skills__svg {
     fill: #DFB78C;
   }
-  .portfolio .portfolio__title {
+  .portfolio__title {
     font-size: 2rem;
   }
-  .portfolio .portfolio__project {
+  .portfolio__project {
     width: auto;
     height: auto;
   }
-  .portfolio .portfolio__text {
+  .portfolio__text {
     margin: 10px 0;
   }
-  .portfolio .portfolio__project--four {
+  .portfolio__project--four {
     display: initial;
   }
-  .portfolio .portfolio__text--four {
+  .portfolio__text--four {
     display: initial;
   }
   .contact {
@@ -747,37 +750,49 @@ body .footer {
   }
 }
 @media screen and (min-width: 1024px) {
-  .about .about__title {
+  .about__title {
     margin: auto 0;
   }
-  .about .about__image {
+  .about__image {
     height: 500px;
     width: 300px;
     margin: 0 auto;
   }
-  .about .about__info--paragraph-1 {
+  .about__info--paragraph-1 {
     margin: 60px 0 0;
     width: 90%;
   }
-  .about .about__info--paragraph-2 {
+  .about__info--paragraph-2 {
     margin: 0 0 30px;
     width: 90%;
   }
   .skills {
     height: 300px;
   }
-  .skills .skills__title {
+  .skills__title {
     margin: 0;
   }
-  .skills .skills__info {
+  .skills__info {
     margin: 0;
   }
-  .skills .skills__svg {
+  .skills__svg {
     margin: 20px auto 0;
   }
-  .portfolio .portfolio__project {
+  .portfolio__project {
     width: 100%;
     height: 250px;
+  }
+  .portfolio__project--five {
+    display: initial;
+  }
+  .portfolio__text--five {
+    display: initial;
+  }
+  .portfolio__project--six {
+    display: initial;
+  }
+  .portfolio__text--six {
+    display: initial;
   }
 }
 .footer {
@@ -785,43 +800,37 @@ body .footer {
   width: 100%;
   height: 150px;
 }
-.footer .footer__image {
+.footer__image {
   width: auto;
   height: 70px;
   background-color: #DFB78C;
 }
-.footer .footer__image img {
+.footer__image img {
   width: 70px;
   height: 70px;
   border-radius: 50px;
 }
-.footer .footer__image--one, .footer .footer__image--two, .footer .footer__image--three {
+.footer__image--one, .footer__image--two, .footer__image--three {
   justify-self: center;
   align-self: center;
 }
-.footer .footer__image--one {
+.footer__image--one {
   justify-self: right;
 }
-.footer .footer__image--three {
+.footer__image--three {
   justify-self: left;
   border-radius: 50px;
 }
-.footer .footer__image:hover {
+.footer__image:hover {
   border: 1px none #000000;
   background-color: white;
   border-radius: 50px;
   filter: invert(1);
 }
-.footer .footer__image:hover:nth-child(3):hover {
+.footer__image:hover:nth-child(3):hover {
   filter: grayscale(100%);
   filter: invert(1);
   background-color: white;
-}
-.footer .footer__image .footer__image:hover {
-  border: 1px none #000000;
-  background-color: white;
-  border-radius: 50px;
-  filter: invert(1);
 }
 
 body {

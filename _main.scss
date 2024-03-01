@@ -1,26 +1,26 @@
 @use "./variables" as *;
 
 .about {
-  .about__title {
+  &__title {
     font-family: $header-font;
     font-size: 2rem;
     font-weight: 600;
   }
 
-  .about__image {
+  &__image {
     width: 100%; //Ensure image takes up full centre of its row
     height: auto; //Change to "width: 100;" once I replace placeholder
     margin: 19px 0;
   }
 
-  .about__info--paragraph-1 {
+  &__info--paragraph-1 {
     font-family: $paragraph-font;
     font-size: 14px;
     line-height: 1.5;
     margin-top: 30px;
   }
 
-  .about__info--paragraph-2 {
+  &__info--paragraph-2 {
     font-family: $paragraph-font;
     font-size: 14px;
     line-height: 1.5;
@@ -34,50 +34,50 @@
 }
 
 .portfolio {
-  .portfolio__title {
+  &__title {
     font-family: $header-font;
     font-size: 2rem;
     margin: 40px 0 25px;
   }
 
-  .portfolio__text {
+  &__text {
     font-family: $header-font;
     font-size: 1.5rem;
     margin-bottom: 50px;
   }
 
-  .portfolio__project {
+  &__project {
     width: 100%;
     height: auto;
   }
 
-  .portfolio__project--four {
+  &__project--four {
     display: none;
   }
 
-  .portfolio__text--four {
+  &__text--four {
     display: none;
   }
 
-  .portfolio__project--five {
+  &__project--five {
     display: none;
   }
 
-  .portfolio__text--five {
+  &__text--five {
     display: none;
   }
 
-  .portfolio__project--six {
+  &__project--six {
     display: none;
   }
 
-  .portfolio__text--six {
+  &__text--six {
     display: none;
   }
 }
 
 .contact {
-  .contact__title {
+  &__title {
     font-family: $header-font;
     font-size: 64px;
     font-weight: 300;
@@ -85,7 +85,7 @@
     margin-top: 35px;
   }
 
-  .contact__button {
+  &__button {
     border: 1px solid $white-color;
     background-color: $primary-color;
     color: $white-color;
@@ -104,22 +104,22 @@
   }
 
   .about {
-    .about__title {
+    &__title {
       margin: 32px 0;
     }
 
-    .about__image {
+    &__image {
       height: 300px;
       width: auto;
     }
 
-    .about__info--paragraph-1 {
+    &__info--paragraph-1 {
       margin: 32px 0 0 50px;
       font-size: 16px;
       font-weight: 300;
     }
 
-    .about__info--paragraph-2 {
+    &__info--paragraph-2 {
       margin-top: 31px;
       font-size: 16px;
       font-weight: 300;
@@ -129,13 +129,13 @@
   .skills {
     display: block;
 
-    .skills__title {
+    &__title {
       font-family: $header-font;
       font-size: 2rem;
       font-weight: 600;
     }
 
-    .skills__info {
+    &__info {
       font-family: $paragraph-font;
       font-size: 16px;
       line-height: 1.5;
@@ -143,31 +143,31 @@
       font-weight: 300;
     }
 
-    .skills__svg {
+    &__svg {
       //give svgs a grid
       fill: $secondary-color;
     }
   }
 
   .portfolio {
-    .portfolio__title {
+    &__title {
       font-size: 2rem; //REMOVE/CHANGE THIS LINE LATER
     }
 
-    .portfolio__project {
+    &__project {
       width: auto;
       height: auto;
     }
 
-    .portfolio__text {
+    &__text {
       margin: 10px 0;
     }
 
-    .portfolio__project--four {
+    &__project--four {
       display: initial;
     }
 
-    .portfolio__text--four {
+    &__text--four {
       display: initial;
     }
   }
@@ -179,22 +179,22 @@
 
 @media screen and (min-width: 1024px) {
   .about {
-    .about__title {
+    &__title {
       margin: auto 0;
     }
 
-    .about__image {
+    &__image {
       height: 500px;
       width: 300px;
       margin: 0 auto;
     }
 
-    .about__info--paragraph-1 {
+    &__info--paragraph-1 {
       margin: 60px 0 0;
       width: 90%;
     }
 
-    .about__info--paragraph-2 {
+    &__info--paragraph-2 {
       margin: 0 0 30px;
       width: 90%;
     }
@@ -203,24 +203,40 @@
   .skills {
     height: 300px;
 
-    .skills__title {
+    &__title {
       margin: 0;
     }
 
-    .skills__info {
+    &__info {
       margin: 0;
     }
 
-    .skills__svg {
+    &__svg {
         margin: 20px auto 0;
       }
   }
 
   .portfolio {
 
-    .portfolio__project {
+    &__project {
       width: 100%;
       height: 250px;
+    }
+
+    &__project--five {
+      display: initial;
+    }
+
+    &__text--five {
+      display: initial;
+    }
+
+    &__project--six {
+      display: initial;
+    }
+
+    &__text--six {
+      display: initial;
     }
   }
 }
