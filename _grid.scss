@@ -117,5 +117,160 @@ body {
     .portfolio__text--four {
       grid-area: 5 / 2 / 6 / 3;
     }
+  }
 }
+
+@media screen and (min-width: 1024px) {
+
+  body {
+    .head-section {
+      grid-template: repeat(3, auto) /  5% repeat(6, 1fr) 5%;
+
+      .head-section__title {
+        grid-area: 1 / 1 / 2 / 5;
+      }
+
+      .head-section__navigation {
+        grid-area: 1 / 6 / 2 / 9;
+      }
+
+      .head-section__subheader {
+        grid-area: 2 / 1 / 3 / 9;
+      }
+
+      .head-section__info {
+        grid-area: 3 / 1 / 4 / 5;
+      }
+    }  
+
+    .about {
+      grid-template: 60px 204px 204px 204px/ 60% 40%;
+      margin-top: 100px;
+
+      .about__title {
+        grid-area: 1 / 1 / 2 / 3;
+      }
+
+      .about__image {
+        grid-area: 1 / 2 / 5 / 3;
+        place-items: center;
+      }
+
+      .about__info--paragraph-1 {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+
+      .about__info--paragraph-2 {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+    }
+
+    .skills {
+      display: grid;
+      grid-template: 1fr 2fr / 50px repeat(9, 95px) 50px;
+
+      .skills__title {
+        grid-area: 1 / 1 / 2 / 4;
+      }
+
+      .skills__info {
+        grid-area: 1 / 4 / 2 / -1;
+      }
+
+      .skills__svg--one {
+        grid-area: 2 / 2 / 3 / 3;
+        
+      }
+
+      .skills__svg--two {
+        grid-area: 2 / 3 / 3 / 4;
+      }
+
+      .skills__svg--three {
+        grid-area: 2 / 4 / 3 / 5;
+      }
+
+      .skills__svg--four {
+        grid-area: 2 / 5 / 3 / 6;
+      }
+
+      .skills__svg--five {
+        grid-area: 2 / 6 / 3 / 7;
+      }
+
+      .skills__svg--six {
+        grid-area: 2 / 7 / 3 / 8;
+      }
+
+      .skills__svg--seven {
+        grid-area: 2 / 8 / 3 / 9;
+      }
+
+      .skills__svg--eight {
+        grid-area: 2 / 9 / 3 / 10;
+      }
+
+      .skills__svg--nine {
+        grid-area: 2 / 10 / 3 / 11;
+      }
+    }
+
+
+    .portfolio {
+      grid-template: repeat(7, auto) / repeat(6, 1fr);
+      column-gap: 20px;
+
+      .portfolio__title {
+        grid-area: 1 / 1 / 2 / -1;
+      }
+
+      .portfolio__project--one {
+        grid-area: 2 / 1 / 3 / 3;
+      }
+
+      .portfolio__project--two {
+        grid-area: 2 / 3 / 3 / 5;
+      }
+
+      .portfolio__project--three {
+        grid-area: 2 / 5 / 3 / 7;
+      }
+
+      .portfolio__text--one {
+        grid-area: 3 / 1 / 4 / 3;
+      }
+
+      .portfolio__text--two {
+        grid-area: 3 / 3 / 4 / 5;
+      }
+
+      .portfolio__text--three {
+        grid-area: 3 / 5 / 4 / 7;
+      }
+
+      .portfolio__project--four {
+        grid-area: 5 / 1 / 6 / 3;
+      }
+
+      .portfolio__project--five {
+        grid-area: 5 / 3 / 6 / 5;
+      }
+
+      .portfolio__project--six {
+        grid-area: 5 / 5 / 6 / 7;
+      }
+
+      .portfolio__text--four {
+        grid-area: 6 / 1 / 7 / 3;
+      }
+
+      .portfolio__text--five {
+        grid-area: 6 / 3 / 7 / 5;
+      }
+
+      .portfolio__text--six {
+        grid-area: 6 / 5 / 7 / 7;
+      }
+    }
+  }
 }
