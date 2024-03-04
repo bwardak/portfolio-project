@@ -314,6 +314,9 @@ template {
   display: none;
 }
 
+.head-section {
+  height: 100vh;
+}
 .head-section__name {
   text-align: center;
   font-size: 1.3rem;
@@ -337,7 +340,7 @@ template {
   font-size: 14px;
   line-height: 1.5;
   margin: 30px 0;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 @media screen and (min-width: 768px) {
@@ -361,6 +364,7 @@ template {
     width: 100%;
     display: block;
     background-color: #DFB78C;
+    border-radius: 5px;
   }
   .head-section__navigation .head-section__nav-list {
     height: calc(100% - 40px);
@@ -382,7 +386,7 @@ template {
     font-weight: 300;
   }
   .head-section__subheader {
-    margin: 50px 20px 30px 30px;
+    margin: 90px 20px 30px 30px;
     font-size: 5rem;
   }
   .head-section__info {
@@ -394,14 +398,37 @@ template {
   .head-section__subheader {
     font-size: 5.5rem;
     height: 200px;
-    margin: 30px 0px;
+    margin: 80px 0px 0px -30px;
     display: flex;
     align-items: center;
     padding-left: 40px;
   }
   .head-section__info {
     padding-left: 40px;
-    margin: 20px 0;
+    margin: 70px 0 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .head-section {
+    padding-left: 80px;
+  }
+  .head-section .head-section__name {
+    font-size: 3rem;
+  }
+  .head-section__navigation {
+    border-radius: 5px;
+  }
+  .head-section__navigation .head-section__nav-link {
+    font-size: 22px;
+  }
+  .head-section__subheader {
+    font-size: 7.5rem;
+    padding-left: 30px;
+    margin: 100px 0 30px;
+  }
+  .head-section__info {
+    padding-left: 70px;
+    margin-top: 40px;
   }
 }
 body {
@@ -432,73 +459,76 @@ body .footer {
 }
 
 @media screen and (min-width: 768px) {
-  .head-section {
-    grid-template: repeat(3, auto)/repeat(5, 1fr);
+  body .head-section {
+    grid-template: 120px repeat(2, auto)/repeat(5, 1fr);
   }
-  .head-section__title {
+  body .head-section__title {
     grid-area: 1/1/2/4;
   }
-  .head-section__navigation {
+  body .head-section__navigation {
     grid-area: 1/4/2/6;
   }
-  .head-section__subheader {
+  body .head-section__subheader {
     grid-area: 2/1/3/6;
   }
-  .head-section__info {
+  body .head-section__info {
     grid-area: 3/1/4/4;
   }
-  .about {
+  body .about {
     grid-template: repeat(3, auto)/repeat(2, auto);
   }
-  .about__title {
+  body .about__title {
     grid-area: 1/1/2/3;
   }
-  .about__image {
+  body .about__image {
     grid-area: 2/1/3/2;
   }
-  .about__info--paragraph-1 {
+  body .about__info--paragraph-1 {
     grid-area: 2/2/3/3;
   }
-  .about__info--paragraph-2 {
+  body .about__info--paragraph-2 {
     grid-area: 3/1/4/3;
   }
-  .portfolio {
-    grid-template: repeat(5, 35px)/repeat(2, 1fr);
+  body .portfolio {
+    grid-template: repeat(5, auto)/repeat(2, 1fr);
   }
-  .portfolio__title {
+  body .portfolio__title {
     grid-area: 1/1/2/3;
   }
-  .portfolio__project--one {
+  body .portfolio__project--one {
     grid-area: 2/1/3/2;
   }
-  .portfolio__project--two {
+  body .portfolio__project--two {
     grid-area: 2/2/3/3;
   }
-  .portfolio__text--one {
+  body .portfolio__text--one {
     grid-area: 3/1/4/2;
   }
-  .portfolio__text--two {
+  body .portfolio__text--two {
     grid-area: 3/2/4/3;
   }
-  .portfolio__project--three {
+  body .portfolio__project--three {
     grid-area: 4/1/5/2;
   }
-  .portfolio__text--three {
+  body .portfolio__text--three {
     grid-area: 4/2/5/3;
   }
-  .portfolio__project--four {
+  body .portfolio__project--four {
     grid-area: 4/2/5/3;
   }
-  .portfolio__text--three {
+  body .portfolio__text--three {
     grid-area: 5/1/6/2;
   }
-  .portfolio__text--four {
+  body .portfolio__text--four {
     grid-area: 5/2/6/3;
+  }
+  body .footer {
+    grid-template: 1fr/1fr 15% 1fr;
   }
 }
 @media screen and (min-width: 1024px) {
   body .head-section {
-    grid-template: repeat(3, auto)/5% repeat(6, 1fr) 5%;
+    grid-template: 16% 32% 52%/5% repeat(6, 1fr) 5%;
   }
   body .head-section__title {
     grid-area: 1/1/2/5;
@@ -531,7 +561,7 @@ body .footer {
   }
   body .skills {
     display: grid;
-    grid-template: 1fr 2fr/50px repeat(9, 95px) 50px;
+    grid-template: 1fr 2fr/1fr repeat(9, 2fr) 1fr;
   }
   body .skills__title {
     grid-area: 1/1/2/4;
@@ -584,13 +614,13 @@ body .footer {
     grid-area: 2/5/3/7;
   }
   body .portfolio__text--one {
-    grid-area: 3/1/4/3;
+    grid-area: 3/1/4/2;
   }
   body .portfolio__text--two {
-    grid-area: 3/3/4/5;
+    grid-area: 3/3/4/4;
   }
   body .portfolio__text--three {
-    grid-area: 3/5/4/7;
+    grid-area: 3/5/4/6;
   }
   body .portfolio__project--four {
     grid-area: 5/1/6/3;
@@ -602,35 +632,63 @@ body .footer {
     grid-area: 5/5/6/7;
   }
   body .portfolio__text--four {
-    grid-area: 6/1/7/3;
+    grid-area: 6/1/7/2;
   }
   body .portfolio__text--five {
-    grid-area: 6/3/7/5;
+    grid-area: 6/3/7/4;
   }
   body .portfolio__text--six {
-    grid-area: 6/5/7/7;
+    grid-area: 6/5/7/6;
+  }
+  body .footer {
+    grid-template: 1fr/1fr 10% 1fr;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body .head-section {
+    grid-template: 16% repeat(2, 44%)/5% repeat(6, 1fr) 5%;
+  }
+  body .portfolio {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  body .portfolio__view--one {
+    grid-area: 3/2/4/3;
+  }
+  body .portfolio__view--two {
+    grid-area: 3/4/4/5;
+  }
+  body .portfolio__view--three {
+    grid-area: 3/6/4/7;
+  }
+  body .portfolio__view--four {
+    grid-area: 6/2/7/3;
+  }
+  body .portfolio__view--five {
+    grid-area: 6/4/7/5;
+  }
+  body .portfolio__view--six {
+    grid-area: 6/6/7/7;
+  }
+  body .footer {
+    grid-template: 1fr/1fr 10% 1fr;
   }
 }
 .about__title {
-  font-family: "Cormorant", serif;
-  font-size: 2rem;
-  font-weight: 600;
+  font: 600 2rem "Cormorant", serif;
 }
 .about__image {
   width: 100%;
   height: auto;
   margin: 19px 0;
 }
+.about__info {
+  font: 200 14px/1.5 "Inter", serif;
+}
 .about__info--paragraph-1 {
-  font-family: "Inter", serif;
-  font-size: 14px;
-  line-height: 1.5;
   margin-top: 30px;
 }
 .about__info--paragraph-2 {
-  font-family: "Inter", serif;
-  font-size: 14px;
-  line-height: 1.5;
   margin-bottom: 30px;
 }
 
@@ -639,13 +697,11 @@ body .footer {
 }
 
 .portfolio__title {
-  font-family: "Cormorant", serif;
-  font-size: 2rem;
+  font: 600 2rem "Cormorant", serif;
   margin: 40px 0 25px;
 }
 .portfolio__text {
-  font-family: "Cormorant", serif;
-  font-size: 1.5rem;
+  font: 1.5rem "Cormorant", serif;
   margin-bottom: 50px;
 }
 .portfolio__project {
@@ -672,9 +728,7 @@ body .footer {
 }
 
 .contact__title {
-  font-family: "Cormorant", serif;
-  font-size: 64px;
-  font-weight: 300;
+  font: 300 64px "Cormorant", serif;
   text-align: center;
   margin-top: 35px;
 }
@@ -684,9 +738,7 @@ body .footer {
   color: #FFFFFF;
   width: 225px;
   height: 60px;
-  font-family: "Inter", serif;
-  font-size: 16px;
-  font-weight: 500;
+  font: 500 16px "Inter", serif;
   margin: 0 auto 60px;
 }
 
@@ -701,30 +753,24 @@ body .footer {
     height: 300px;
     width: auto;
   }
+  .about__info {
+    font: 300 16ox;
+  }
   .about__info--paragraph-1 {
     margin: 32px 0 0 50px;
-    font-size: 16px;
-    font-weight: 300;
   }
   .about__info--paragraph-2 {
     margin-top: 31px;
-    font-size: 16px;
-    font-weight: 300;
   }
   .skills {
     display: block;
   }
   .skills__title {
-    font-family: "Cormorant", serif;
-    font-size: 2rem;
-    font-weight: 600;
+    font: 600 2rem "Cormorant", serif;
   }
   .skills__info {
-    font-family: "Inter", serif;
-    font-size: 16px;
-    line-height: 1.5;
+    font: 200 14px/1.5 "Inter", serif;
     margin-top: 30px;
-    font-weight: 300;
   }
   .skills__svg {
     fill: #DFB78C;
@@ -747,6 +793,14 @@ body .footer {
   }
   .contact {
     padding-right: 30px;
+  }
+  .contact__title {
+    font-size: 80px;
+    margin-bottom: 65px;
+  }
+  .contact__button {
+    width: 300px;
+    height: 70px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -780,7 +834,7 @@ body .footer {
   }
   .portfolio__project {
     width: 100%;
-    height: 250px;
+    height: 200px;
   }
   .portfolio__project--five {
     display: initial;
@@ -793,6 +847,53 @@ body .footer {
   }
   .portfolio__text--six {
     display: initial;
+  }
+  .contact__title {
+    font-size: 112px;
+    margin: 70px;
+  }
+  .contact__button {
+    width: 450px;
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about__title {
+    font-size: 3rem;
+  }
+  .skills {
+    margin-bottom: 100px;
+  }
+  .skills__title {
+    font-size: 3rem;
+  }
+  .skills__info {
+    font-size: 18px;
+  }
+  .portfolio {
+    margin-right: 30px;
+  }
+  .portfolio__title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  .portfolio__project {
+    height: 250px;
+  }
+  .portfolio__text {
+    margin-bottom: 40px;
+  }
+  .portfolio__view {
+    justify-self: end;
+  }
+  .portfolio__view--color {
+    fill: #DFB78C;
+  }
+  .portfolio__view--color-2 {
+    fill: #42322b;
+  }
+  .contact {
+    margin: 100px 0;
   }
 }
 .footer {

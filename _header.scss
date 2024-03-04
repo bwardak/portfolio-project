@@ -1,6 +1,7 @@
 @use "./variables" as *;
 
 .head-section {
+  height: 100vh;
   &__name {
     //Put name in the center, added Cormorant font
     text-align: center;
@@ -30,34 +31,33 @@
     font-size: 14px;
     line-height: 1.5;
     margin: 30px 0;
-    font-weight: 300;
+    font-weight: 200;
   }
 }
 
 @media screen and (min-width: 768px) {
   .head-section {
-    padding-right: 0;   //Removing padding on the right here in order to make my navigation bar background reach the end of my screen
-                        //but keep the header/main padding on the right and left still existent.
+    padding-right: 0; //Removing padding on the right here in order to make my navigation bar background reach the end of my screen
+    //but keep the header/main padding on the right and left still existent.
     &__title {
       height: 100%;
-      width: 100%; 
+      width: 100%;
 
-    .head-section__name {
-      height: calc(100% - 40px);
-      font-size: 2.5rem;
-      text-align: left;
-      margin: 20px 0;
-      display: flex;
-      align-items: center;
-      
-    }
+      .head-section__name {
+        height: calc(100% - 40px);
+        font-size: 2.5rem;
+        text-align: left;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+      }
     }
     &__navigation {
       height: 100%;
       width: 100%;
-      display: block; 
+      display: block;
       background-color: $secondary-color;
-     
+      border-radius: 5px;
 
       .head-section__nav-list {
         height: calc(100% - 40px);
@@ -67,7 +67,6 @@
         padding-left: 0; //Removing excess padding on left when this flex was called. Preferred this spacing
         align-items: center;
         margin: 20px 0;
-        
 
         .head-section__nav-item {
           margin: 0 10px; //Margin to add space as nav bar li elements were right next to each other on flex
@@ -84,25 +83,23 @@
     }
 
     &__subheader {
-      margin: 50px 20px 30px 30px;  //Increase margin size on top to make better looking spacing
+      margin: 90px 20px 30px 30px; //Increase margin size on top to make better looking spacing
       font-size: 5rem;
     }
 
     &__info {
-      margin: 20px 30px 30px ; //Reduce margin size on top as 60px is too much space
+      margin: 20px 30px 30px; //Reduce margin size on top as 60px is too much space
       font-size: 16px;
     }
   }
 }
 
-
 @media screen and (min-width: 1024px) {
-
   .head-section {
     &__subheader {
       font-size: 5.5rem;
       height: 200px;
-      margin: 30px 0px;
+      margin: 80px 0px 0px -30px;  //-30px to generate more space on the right of text
       display: flex;
       align-items: center;
       padding-left: 40px;
@@ -110,8 +107,36 @@
 
     &__info {
       padding-left: 40px;
-      margin: 20px 0;
+      margin: 70px 0 0;
     }
   }
+}
 
+@media screen and (min-width: 1440px) {
+  .head-section {
+    padding-left: 80px;
+    
+    .head-section__name {
+      font-size: 3rem;
+    }
+
+    &__navigation {
+      border-radius: 5px;
+
+      .head-section__nav-link {
+        font-size: 22px;
+      }
+    }
+
+    &__subheader {
+      font-size: 7.5rem;
+      padding-left: 30px;
+      margin: 100px 0 30px;
+    }
+
+    &__info {
+      padding-left: 70px;
+      margin-top: 40px;
+    }
+  }
 }

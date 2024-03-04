@@ -35,87 +35,95 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .head-section {
-    grid-template: repeat(3, auto)/ repeat(5, 1fr);
 
-    &__title {
-      grid-area: 1 / 1/ 2 / 4;
+  body{
+
+    .head-section {
+      grid-template: 120px repeat(2, auto)/ repeat(5, 1fr);
+
+      &__title {
+        grid-area: 1 / 1/ 2 / 4;
+      }
+
+      &__navigation {
+        grid-area: 1 / 4 / 2 / 6;
+      }
+
+      &__subheader {
+        grid-area: 2 / 1 / 3 / 6;
+      }
+
+      &__info {
+        grid-area: 3 / 1 / 4 / 4;
+      }
     }
 
-    &__navigation {
-      grid-area: 1 / 4 / 2 / 6;
+    .about {
+      grid-template: repeat(3, auto) / repeat(2, auto);
+
+      &__title {
+        grid-area: 1 / 1 / 2 / 3;
+      }
+
+      &__image {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+
+      &__info--paragraph-1 {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+
+      &__info--paragraph-2 {
+        grid-area: 3 / 1 / 4 / 3;
+      }
     }
 
-    &__subheader {
-      grid-area: 2 / 1 / 3 / 6;
+    .portfolio {
+      grid-template: repeat(5, auto) / repeat(2, 1fr);
+
+      &__title {
+        grid-area: 1 / 1 / 2 / 3;
+      }
+      
+      &__project--one {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+
+      &__project--two {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+
+      &__text--one {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+
+      &__text--two {
+        grid-area: 3 / 2 / 4 / 3;
+      }
+
+      &__project--three {
+        grid-area: 4 / 1 / 5 / 2;
+      }
+
+      &__text--three {
+        grid-area: 4 / 2 / 5 / 3;
+      }
+
+      &__project--four {
+        grid-area: 4 / 2 / 5 / 3;
+      }
+
+      &__text--three {
+        grid-area: 5 / 1 / 6 / 2;
+      }
+
+      &__text--four {
+        grid-area: 5 / 2 / 6 / 3;
+      }
     }
 
-    &__info {
-      grid-area: 3 / 1 / 4 / 4;
-    }
-  }
-
-  .about {
-    grid-template: repeat(3, auto) / repeat(2, auto);
-
-    &__title {
-      grid-area: 1 / 1 / 2 / 3;
-    }
-
-    &__image {
-      grid-area: 2 / 1 / 3 / 2;
-    }
-
-    &__info--paragraph-1 {
-      grid-area: 2 / 2 / 3 / 3;
-    }
-
-    &__info--paragraph-2 {
-      grid-area: 3 / 1 / 4 / 3;
-    }
-  }
-
-  .portfolio {
-    grid-template: repeat(5, 35px) / repeat(2, 1fr);
-
-    &__title {
-      grid-area: 1 / 1 / 2 / 3;
-    }
-    
-    &__project--one {
-      grid-area: 2 / 1 / 3 / 2;
-    }
-
-    &__project--two {
-      grid-area: 2 / 2 / 3 / 3;
-    }
-
-    &__text--one {
-      grid-area: 3 / 1 / 4 / 2;
-    }
-
-    &__text--two {
-      grid-area: 3 / 2 / 4 / 3;
-    }
-
-    &__project--three {
-      grid-area: 4 / 1 / 5 / 2;
-    }
-
-    &__text--three {
-      grid-area: 4 / 2 / 5 / 3;
-    }
-
-    &__project--four {
-      grid-area: 4 / 2 / 5 / 3;
-    }
-
-    &__text--three {
-      grid-area: 5 / 1 / 6 / 2;
-    }
-
-    &__text--four {
-      grid-area: 5 / 2 / 6 / 3;
+    .footer {
+      grid-template: 1fr / 1fr 15% 1fr;
     }
   }
 }
@@ -124,7 +132,7 @@ body {
 
   body {
     .head-section {
-      grid-template: repeat(3, auto) /  5% repeat(6, 1fr) 5%;
+      grid-template: 16% 32% 52% /  5% repeat(6, 1fr) 5%;
 
       &__title {
         grid-area: 1 / 1 / 2 / 5;
@@ -167,7 +175,7 @@ body {
 
     .skills {
       display: grid;
-      grid-template: 1fr 2fr / 50px repeat(9, 95px) 50px;
+      grid-template: 1fr 2fr / 1fr repeat(9, 2fr) 1fr;
 
       &__title {
         grid-area: 1 / 1 / 2 / 4;
@@ -237,15 +245,15 @@ body {
       }
 
       &__text--one {
-        grid-area: 3 / 1 / 4 / 3;
+        grid-area: 3 / 1 / 4 / 2;
       }
 
       &__text--two {
-        grid-area: 3 / 3 / 4 / 5;
+        grid-area: 3 / 3 / 4 / 4;
       }
 
       &__text--three {
-        grid-area: 3 / 5 / 4 / 7;
+        grid-area: 3 / 5 / 4 / 6;
       }
 
       &__project--four {
@@ -261,16 +269,64 @@ body {
       }
 
       &__text--four {
-        grid-area: 6 / 1 / 7 / 3;
+        grid-area: 6 / 1 / 7 / 2;
       }
 
       &__text--five {
-        grid-area: 6 / 3 / 7 / 5;
+        grid-area: 6 / 3 / 7 / 4;
       }
 
       &__text--six {
-        grid-area: 6 / 5 / 7 / 7;
+        grid-area: 6 / 5 / 7 / 6;
       }
     }
+
+    .footer {
+      grid-template: 1fr / 1fr 10% 1fr;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  
+  body {
+    
+    .head-section {
+      grid-template: 16% (repeat(2, 44%) / 5% repeat(6, 1fr) 5%);
+    
+    }
+
+    .portfolio {
+      column-gap: 50px;
+
+      &__view--one {
+        grid-area: 3 / 2 / 4 / 3;
+      }
+
+      &__view--two {
+        grid-area: 3 / 4 / 4 / 5;
+      }
+
+      &__view--three {
+        grid-area: 3 / 6 / 4 / 7;
+      }
+
+      &__view--four {
+        grid-area: 6 / 2 / 7 / 3;
+      }
+
+      &__view--five {
+        grid-area: 6 / 4 / 7 / 5;
+      }
+
+      &__view--six {
+        grid-area: 6 / 6 / 7 / 7;
+      }
+    }
+
+    .footer {
+      grid-template: 1fr / 1fr 10% 1fr;
+    }
+
   }
 }

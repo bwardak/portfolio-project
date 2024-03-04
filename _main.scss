@@ -2,9 +2,7 @@
 
 .about {
   &__title {
-    font-family: $header-font;
-    font-size: 2rem;
-    font-weight: 600;
+    font: 600 2rem $header-font;
   }
 
   &__image {
@@ -13,17 +11,15 @@
     margin: 19px 0;
   }
 
+  &__info {
+    font: 200 14px/1.5 $paragraph-font;
+  }
+
   &__info--paragraph-1 {
-    font-family: $paragraph-font;
-    font-size: 14px;
-    line-height: 1.5;
     margin-top: 30px;
   }
 
   &__info--paragraph-2 {
-    font-family: $paragraph-font;
-    font-size: 14px;
-    line-height: 1.5;
     margin-bottom: 30px;
   }
 }
@@ -35,14 +31,12 @@
 
 .portfolio {
   &__title {
-    font-family: $header-font;
-    font-size: 2rem;
+    font: 600 2rem $header-font;
     margin: 40px 0 25px;
   }
 
   &__text {
-    font-family: $header-font;
-    font-size: 1.5rem;
+    font: 1.5rem $header-font;
     margin-bottom: 50px;
   }
 
@@ -78,9 +72,7 @@
 
 .contact {
   &__title {
-    font-family: $header-font;
-    font-size: 64px;
-    font-weight: 300;
+    font: 300 64px $header-font;
     text-align: center;
     margin-top: 35px;
   }
@@ -91,9 +83,7 @@
     color: $white-color;
     width: 225px;
     height: 60px;
-    font-family: $paragraph-font;
-    font-size: 16px;
-    font-weight: 500;
+    font: 500 16px $paragraph-font;
     margin: 0 auto 60px;
   }
 }
@@ -113,16 +103,17 @@
       width: auto;
     }
 
+    &__info {
+      font: 300 16ox;
+    }
+
     &__info--paragraph-1 {
       margin: 32px 0 0 50px;
-      font-size: 16px;
-      font-weight: 300;
+      
     }
 
     &__info--paragraph-2 {
       margin-top: 31px;
-      font-size: 16px;
-      font-weight: 300;
     }
   }
 
@@ -130,17 +121,13 @@
     display: block;
 
     &__title {
-      font-family: $header-font;
-      font-size: 2rem;
-      font-weight: 600;
+      font: 600 2rem $header-font;
     }
 
     &__info {
-      font-family: $paragraph-font;
-      font-size: 16px;
-      line-height: 1.5;
+      font: 200 14px/1.5 $paragraph-font;
       margin-top: 30px;
-      font-weight: 300;
+      
     }
 
     &__svg {
@@ -174,6 +161,16 @@
 
   .contact {
     padding-right: 30px;
+
+    &__title {
+      font-size: 80px;
+      margin-bottom: 65px;
+    }
+
+    &__button {
+      width: 300px;
+      height: 70px;
+    }
   }
 }
 
@@ -212,15 +209,14 @@
     }
 
     &__svg {
-        margin: 20px auto 0;
-      }
+      margin: 20px auto 0;
+    }
   }
 
   .portfolio {
-
     &__project {
       width: 100%;
-      height: 250px;
+      height: 200px;
     }
 
     &__project--five {
@@ -238,5 +234,71 @@
     &__text--six {
       display: initial;
     }
+  }
+
+  .contact {
+    &__title {
+      font-size: 112px;
+      margin: 70px;
+    }
+
+    &__button {
+      width: 450px;
+      height: 80px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  //Increase title size to 3rem, info size to 18px
+  .about {
+    &__title {
+      font-size: 3rem;
+    }
+  }
+
+  .skills {
+    margin-bottom: 100px;
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__info {
+      font-size: 18px;
+    }
+  }
+
+  .portfolio {
+    margin-right: 30px;
+    &__title {
+      font-size: 3rem;
+      margin-bottom: 40px;
+    }
+
+    &__project {
+      height: 250px;
+    }
+
+    &__text {
+      margin-bottom: 40px;
+    }
+
+    &__view{
+      justify-self: end;
+
+      &--color {
+        fill: $secondary-color;
+      }
+
+      &--color-2 {
+        fill: $primary-color;
+      }
+    }
+  }
+
+  .contact {
+    margin: 100px 0;
+    
   }
 }
