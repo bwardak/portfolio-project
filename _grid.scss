@@ -19,7 +19,35 @@ body {
 
   .portfolio {
     display: grid;
-    grid-template-rows: repeat(7, auto);
+    grid-template: repeat(7, auto) / 1fr 1fr;
+
+    &__title {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+
+    &__project--one {
+      grid-area: 2 / 1 / 3 / 3;
+    }
+
+    &__text--one {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+
+    &__project--two {
+      grid-area: 4 / 1 / 5 / 3;
+    }
+
+    &__text--two {
+      grid-area: 5 / 1 / 6 / 2;
+    }
+
+    &__project--three {
+      grid-area: 6 / 1 / 7 / 3;
+    }
+
+    &__text--three {
+      grid-area: 7 / 1 / 8 / 2;
+    }
   }
 
   .contact {
@@ -79,18 +107,19 @@ body {
     }
 
     .portfolio {
-      grid-template: repeat(5, auto) / repeat(2, 1fr);
+      grid-template: repeat(5, auto) / 2fr 3fr 2fr 3fr;
+      gap: 10px;
 
       &__title {
-        grid-area: 1 / 1 / 2 / 3;
+        grid-area: 1 / 1 / 2 / 5;
       }
       
       &__project--one {
-        grid-area: 2 / 1 / 3 / 2;
+        grid-area: 2 / 1 / 3 / 3;
       }
 
       &__project--two {
-        grid-area: 2 / 2 / 3 / 3;
+        grid-area: 2 / 3 / 3 / 5;
       }
 
       &__text--one {
@@ -98,19 +127,15 @@ body {
       }
 
       &__text--two {
-        grid-area: 3 / 2 / 4 / 3;
+        grid-area: 3 / 3 / 4 / 4;
       }
 
       &__project--three {
-        grid-area: 4 / 1 / 5 / 2;
-      }
-
-      &__text--three {
-        grid-area: 4 / 2 / 5 / 3;
+        grid-area: 4 / 1 / 5 / 3;
       }
 
       &__project--four {
-        grid-area: 4 / 2 / 5 / 3;
+        grid-area: 4 / 3 / 5 / 5;
       }
 
       &__text--three {
@@ -118,7 +143,7 @@ body {
       }
 
       &__text--four {
-        grid-area: 5 / 2 / 6 / 3;
+        grid-area: 5 / 3 / 6 / 4;
       }
     }
 
@@ -225,7 +250,7 @@ body {
 
 
     .portfolio {
-      grid-template: repeat(7, auto) / repeat(6, 1fr);
+      grid-template: repeat(5, auto) / repeat(3, 2fr 1fr);
       column-gap: 20px;
 
       &__title {
@@ -279,6 +304,30 @@ body {
       &__text--six {
         grid-area: 6 / 5 / 7 / 6;
       }
+
+      &__button--one {
+        grid-area: 3 / 2 / 4 / 3;
+      }
+
+      &__button--two {
+        grid-area: 3 / 4 / 4 / 5;
+      }
+
+      &__button--three {
+        grid-area: 3 / 6 / 4 / 7;
+      }
+
+      &__button--four {
+        grid-area: 6 / 2 / 7 / 3;
+      }
+
+      &__button--five {
+        grid-area: 6 / 4 / 7 / 5;
+      }
+
+      &__button--six {
+        grid-area: 6 / 6 / 7 / 7;
+      }
     }
 
     .footer {
@@ -299,27 +348,27 @@ body {
     .portfolio {
       column-gap: 50px;
 
-      &__view--one {
+      &__button--one {
         grid-area: 3 / 2 / 4 / 3;
       }
 
-      &__view--two {
+      &__button--two {
         grid-area: 3 / 4 / 4 / 5;
       }
 
-      &__view--three {
+      &__button--three {
         grid-area: 3 / 6 / 4 / 7;
       }
 
-      &__view--four {
+      &__button--four {
         grid-area: 6 / 2 / 7 / 3;
       }
 
-      &__view--five {
+      &__button--five {
         grid-area: 6 / 4 / 7 / 5;
       }
 
-      &__view--six {
+      &__button--six {
         grid-area: 6 / 6 / 7 / 7;
       }
     }

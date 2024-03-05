@@ -12,7 +12,7 @@
   }
 
   &__info {
-    font: 200 14px/1.5 $paragraph-font;
+    font: 200 14px/1.8 $paragraph-font;
   }
 
   &__info--paragraph-1 {
@@ -45,27 +45,27 @@
     height: auto;
   }
 
-  &__project--four {
-    display: none;
+  &__button {
+    border: 2px none $secondary-color;
+    border-radius: 40px;
+    width: 70px;
+    height: 30px;
+    justify-self: flex-start;
+    margin: auto 10px;
+    font-family: $paragraph-font;
+    background-color: $secondary-color;
+    color: $primary-color;
   }
 
-  &__text--four {
-    display: none;
-  }
-
-  &__project--five {
-    display: none;
-  }
-
-  &__text--five {
-    display: none;
-  }
-
-  &__project--six {
-    display: none;
-  }
-
-  &__text--six {
+  &__project--four,
+  &__project--five,
+  &__project--six,
+  &__text--four,
+  &__text--five,
+  &__text--six,
+  &__button--four,
+  &__button--five,
+  &__button--six {
     display: none;
   }
 }
@@ -104,12 +104,11 @@
     }
 
     &__info {
-      font: 300 16ox;
+      font: 200 16px/1.5 $paragraph-font;
     }
 
     &__info--paragraph-1 {
-      margin: 32px 0 0 50px;
-      
+      margin: 32px 0 0 -20px;
     }
 
     &__info--paragraph-2 {
@@ -125,9 +124,8 @@
     }
 
     &__info {
-      font: 200 14px/1.5 $paragraph-font;
+      font: 200 16px/1.5 $paragraph-font;
       margin-top: 30px;
-      
     }
 
     &__svg {
@@ -147,14 +145,20 @@
     }
 
     &__text {
-      margin: 10px 0;
+      margin: 10px 0 40px;
     }
 
-    &__project--four {
-      display: initial;
+    &__project {
+      width: 85%;
     }
 
-    &__text--four {
+    &__button {
+      margin: 10px 0 0;
+    }
+
+    &__project--four,       // turning my mobile 1x3 grid to 2x2 grid
+    &__text--four,
+    &__button--four {
       display: initial;
     }
   }
@@ -219,19 +223,12 @@
       height: 200px;
     }
 
-    &__project--five {
-      display: initial;
-    }
-
-    &__text--five {
-      display: initial;
-    }
-
-    &__project--six {
-      display: initial;
-    }
-
-    &__text--six {
+    &__project--five,
+    &__project--six,
+    &__text--five,
+    &__text--six,
+    &__button--five,
+    &__button--six {
       display: initial;
     }
   }
@@ -254,6 +251,14 @@
   .about {
     &__title {
       font-size: 3rem;
+    }
+
+    &__info {
+      font-size: 18px;
+    }
+
+    &__info--paragraph-2 {
+      padding-top: 30px;
     }
   }
 
@@ -282,23 +287,23 @@
 
     &__text {
       margin-bottom: 40px;
+      color: $secondary-color;
     }
 
-    &__view{
-      justify-self: end;
-
-      &--color {
-        fill: $secondary-color;
-      }
-
-      &--color-2 {
-        fill: $primary-color;
-      }
-    }
+    // &__button {
+    //   border: 2px solid $secondary-color;
+    //   border-radius: 5px;
+    //   width: 35%;
+    //   height: 30%;
+    //   justify-self: flex-start;
+    //   margin-top: 10px;
+    //   font-family: $paragraph-font;
+    //   background-color: $primary-color;
+    //   color: $secondary-color;
+    // }
   }
 
   .contact {
     margin: 100px 0;
-    
   }
 }

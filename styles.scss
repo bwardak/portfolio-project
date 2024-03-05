@@ -1,15 +1,17 @@
 @use './reset' as *;
 @use './variables' as *;
-@use './header';
-@use './grid';
-@use './main';
-@use './footer';
+@use './header' as *;
+@use './grid' as *;
+@use './main' as *;
+@use './footer' as *;
 
 body {
   background-color: $primary-color;  //Coffee theme
   color: $white-color;
   padding: 0;
   margin: 0;
+  max-width: 2560px;
+  max-height: 4093px;
 }
 
 header,
