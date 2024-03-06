@@ -883,6 +883,7 @@ body .footer {
   font-family: "Inter", serif;
   background-color: #DFB78C;
   color: #42322b;
+  cursor: pointer;
 }
 .portfolio__project--four, .portfolio__project--five, .portfolio__project--six, .portfolio__text--four, .portfolio__text--five, .portfolio__text--six, .portfolio__button--four, .portfolio__button--five, .portfolio__button--six {
   display: none;
@@ -901,13 +902,13 @@ body .footer {
   text-align: center;
 }
 .contact__button {
-  border: 1px solid #FFFFFF;
-  background-color: #42322b;
-  color: #FFFFFF;
+  border: 1px solid #000000;
+  background-color: #DFB78C;
+  color: #42322b;
   width: 225px;
   height: 60px;
-  font: 500 1rem "Inter", serif;
-  margin: 0 auto 60px;
+  font: 700 1.2rem "Inter", serif;
+  margin: 0 auto 0px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1095,7 +1096,7 @@ body .footer {
     height: 200px;
   }
   .portfolio__button {
-    width: 55px;
+    width: 70px;
   }
   .portfolio__project--five, .portfolio__project--six, .portfolio__text--five, .portfolio__text--six, .portfolio__button--five, .portfolio__button--six {
     display: initial;
@@ -1307,6 +1308,35 @@ body .footer {
 }
 
 #popup__projectone.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#popup__buttonone {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: #DFB78C;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  color: #42322b;
+}
+#popup__buttonone .portfolio__button {
+  background-color: #42322b;
+  color: #DFB78C;
+}
+#popup__buttonone .portfolio__button--git {
+  width: 80px;
+}
+
+#popup__buttonone.active {
   top: 50%;
   visibility: visible;
   opacity: 1;

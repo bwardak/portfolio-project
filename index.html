@@ -293,18 +293,18 @@
             class="portfolio__project portfolio__project--one scroll-fade"
             
           />
-          <p class="portfolio__text portfolio__text--one scroll-fade">PROJECT 1</p>
+          <p class="portfolio__text portfolio__text--one scroll-fade">Smart Home System</p>
           <button class="portfolio__button portfolio__button--one scroll-fade"  onclick="toggle()">More</button>
           <!--button to expand my project view ^-->
           
 
           <img
-            src="./project-footer-images/placeholder.webp"
+            src="./project-projects-images/rpg-game.png"
             alt=""
             class="portfolio__project portfolio__project--two scroll-fade"
             
           />
-          <p class="portfolio__text portfolio__text--two scroll-fade">PROJECT 2</p>
+          <p class="portfolio__text portfolio__text--two scroll-fade">RPG Game</p>
           <button class="portfolio__button portfolio__button--two scroll-fade">More</button>
 
           <img
@@ -313,7 +313,7 @@
             class="portfolio__project portfolio__project--three scroll-fade"
             
           />
-          <p class="portfolio__text portfolio__text--three scroll-fade">PROJECT 3</p>
+          <p class="portfolio__text portfolio__text--three scroll-fade">Cafe Menu</p>
           <button class="portfolio__button portfolio__button--three scroll-fade">More</button>
 
           <img
@@ -322,7 +322,7 @@
             class="portfolio__project portfolio__project--four scroll-fade"
             
           />
-          <p class="portfolio__text portfolio__text--four scroll-fade">PROJECT 4</p>
+          <p class="portfolio__text portfolio__text--four scroll-fade">Markers</p>
           <button class="portfolio__button portfolio__button--four scroll-fade">More</button>
 
           <img
@@ -331,7 +331,7 @@
             class="portfolio__project portfolio__project--five scroll-fade"
             
           />
-          <p class="portfolio__text portfolio__text--five scroll-fade">PROJECT 5</p>
+          <p class="portfolio__text portfolio__text--five scroll-fade">Registration Form</p>
           <button class="portfolio__button portfolio__button--five scroll-fade">More</button>
 
           <img
@@ -340,7 +340,7 @@
             class="portfolio__project portfolio__project--six scroll-fade"
             
           />
-          <p class="portfolio__text portfolio__text--six scroll-fade">PROJECT 6</p>
+          <p class="portfolio__text portfolio__text--six scroll-fade">Website</p>
           <button class="portfolio__button portfolio__button--six scroll-fade">More</button>
         </section>
 
@@ -348,14 +348,23 @@
           <!--Add form on clicking contact-->
           <h3 class="contact__title scroll-fade">Get in touch.</h3>
           <p class="contact__text">Get in contact with me for any further information or work via the button below</p>
-          <button class="contact__button scroll-fade">CONTACT</button>
+          <button class="contact__button scroll-fade" onclick="toggle2()">CONTACT</button>
         </section>
         </div>
     </main>
 
     <div id="popup__projectone">
-      <p>This is my first project. It is a role playing game where you have to kill a dragon. It was made using Javascript</p>
-      <button class="portfolio__button portfolio__button--one scroll-fade"  onclick="toggle()">Close</button>
+      <p>I lied! I do not have the facilities to create a smart home system! If anything maybe a dumb home system LOLOLOLOL</p>
+      <button class="portfolio__button portfolio__button--close scroll-fade"  onclick="toggle()">Close</button>
+      <button class="portfolio__button portfolio__button--git scroll-fade" onclick="window.open('https://github.com/bwardak', '_blank'); ">Github</button>
+    </div>
+
+    <div id="popup__buttonone">
+      <p>First Name: </p>
+      <p>Surname: </p>
+      <p>Email Address: </p>
+    <button class="portfolio__button portfolio__button--close scroll-fade"  onclick="toggle2()">Close</button>
+    <button class="portfolio__button portfolio__button--send scroll-fade"  onclick="toggle2()">Send</button>
     </div>
     
 

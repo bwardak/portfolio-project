@@ -16,9 +16,19 @@ const scrollElements = document.querySelectorAll('.scroll-fade');
 scrollElements.forEach((el) => observer.observe(el));
 
 
-function toggle(){                // Code to make more button expand
-  var blur = document.getElementById('blur');
+const toggle = () =>{                // Code to make more button expand
+  const blur = document.getElementById('blur');
   blur.classList.toggle('active');
-  var popup__projectone = document.getElementById('popup__projectone');
+
+  const popup__projectone = document.getElementById('popup__projectone');
   popup__projectone.classList.toggle("active");
 }
+
+const toggle2 = () => {
+  // Code to make more button expand
+  const blur = document.getElementById('blur');
+  blur.classList.toggle('active');
+
+  const popup__buttonone = document.getElementById('popup__buttonone');
+  popup__buttonone.classList.toggle('active');
+};
