@@ -17,55 +17,7 @@ body {
     grid-template-rows: repeat(4, auto);
   }
 
-  .skills {
-      display: grid;
-      grid-template: auto 2fr 2fr / 1fr repeat(9, 2fr) 1fr;
-
-      &__title {
-        grid-area: 1 / 1 / 2 / 4;
-      }
-
-      &__info {
-        grid-area: 1 / 4 / 2 / -1;
-      }
-
-      &__svg--github {
-        grid-area: 2 / 2 / 3 / 3;
-        
-      }
-
-      &__svg--html5 {
-        grid-area: 3 / 2 / 4 / 3;
-      }
-
-      &__svg--css3 {
-        grid-area: 2 / 4 / 3 / 5;
-      }
-
-      &__svg--javascript {
-        grid-area: 3 / 4 / 4 / 5;
-      }
-
-      &__svg--scss {
-        grid-area: 2 / 6 / 3 / 7;
-      }
-
-      &__svg--bem {
-        grid-area: 3 / 6 / 4 / 7;
-      }
-
-      &__svg--react {
-        grid-area: 2 / 8 / 3 / 9;
-      }
-
-      &__svg--java {
-        grid-area: 3 / 8 / 4 / 9;
-      }
-
-      &__svg--springboot {
-        grid-area: 2 / 10 / 3 / 11;
-      }
-    }
+  
 
   .portfolio {
     display: grid;
@@ -153,6 +105,56 @@ body {
 
       &__info--paragraph-2 {
         grid-area: 3 / 1 / 4 / 3;
+      }
+    }
+
+    .skills {
+      display: grid;
+      grid-template: auto 2fr 2fr / 1fr repeat(9, 2fr) 1fr;
+
+      &__title {
+        grid-area: 1 / 1 / 2 / 4;
+      }
+
+      &__info {
+        grid-area: 1 / 4 / 2 / -1;
+      }
+
+      &__svg--github {
+        grid-area: 2 / 2 / 3 / 3;
+        
+      }
+
+      &__svg--html5 {
+        grid-area: 3 / 2 / 4 / 3;
+      }
+
+      &__svg--css3 {
+        grid-area: 2 / 4 / 3 / 5;
+      }
+
+      &__svg--javascript {
+        grid-area: 3 / 4 / 4 / 5;
+      }
+
+      &__svg--scss {
+        grid-area: 2 / 6 / 3 / 7;
+      }
+
+      &__svg--bem {
+        grid-area: 3 / 6 / 4 / 7;
+      }
+
+      &__svg--react {
+        grid-area: 2 / 8 / 3 / 9;
+      }
+
+      &__svg--java {
+        grid-area: 3 / 8 / 4 / 9;
+      }
+
+      &__svg--springboot {
+        grid-area: 2 / 10 / 3 / 11;
       }
     }
 

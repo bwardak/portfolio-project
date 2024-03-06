@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 .scroll-fade {
   opacity: 0;
   filter: blur(5px);
@@ -12,10 +14,9 @@
 }
 
 .about {
-
   &__image {
-      transition-delay: filter transform 200ms;
-    }
+    transition-delay: filter transform 200ms;
+  }
   &__info--paragraph-1 {
     transition-delay: 400ms;
   }
@@ -27,7 +28,7 @@
 
 .skills {
   &__title {
-    transition-delay:  200ms;
+    transition-delay: 200ms;
   }
 
   &__info {
@@ -37,7 +38,7 @@
   &__svg--github {
     transition-delay: 600ms;
   }
-  
+
   &__svg--html5 {
     transition-delay: 600ms;
   }
@@ -71,4 +72,43 @@
   }
 }
 
+.main#blur.active {
+  filter: blur(20px);
+  pointer-events: none; // Cannot interact with element
+  user-select: none; // Text cannot be selected
+  position: relative;
+}
 
+#popup__projectone {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: $secondary-color;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  color: $primary-color;
+
+  .portfolio__button {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+}
+
+#popup__projectone.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+
+}
+
+@media screen and (min-width: 768px) {
+  #popup__projectone{
+    width: 600px;
+  }
+}

@@ -52,12 +52,12 @@
       </p>
     </header>
 
-    <main class="main">
+    <main class="main" id="blur">
       <!--Main to include about section, skills section, portfolio section with projects and contact info section-->
         <section class="about scroll-fade scroll-section" id="about">
           <h3 class="about__title">ABOUT.</h3>
           <img
-            src="./project-about-images/prom-with-shard.jpg"
+            src="./project-footer-images/brown.jpg"
             alt=""
             class="about__image about__image--selfie scroll-fade"
           />
@@ -288,7 +288,7 @@
           <h3 class="portfolio__title scroll-fade"  id="portfolio">PORTFOLIO.</h3>
           
           <img
-            src="./project-projects-images/rpg-game.png"
+            src="./project-footer-images/smart-home.jpg"
             alt=""
             class="portfolio__project portfolio__project--one scroll-fade"
             
@@ -296,6 +296,7 @@
           <p class="portfolio__text portfolio__text--one scroll-fade">PROJECT 1</p>
           <button class="portfolio__button portfolio__button--one scroll-fade"  onclick="toggle()">More</button>
           <!--button to expand my project view ^-->
+          
 
           <img
             src="./project-footer-images/placeholder.webp"
@@ -351,6 +352,11 @@
         </section>
         </div>
     </main>
+
+    <div id="popup__projectone">
+      <p>This is my first project. It is a role playing game where you have to kill a dragon. It was made using Javascript</p>
+      <button class="portfolio__button portfolio__button--one scroll-fade"  onclick="toggle()">Close</button>
+    </div>
     
 
     <footer class="footer">
@@ -379,6 +385,7 @@
           alt="button with link to Baheers CV"
       /></a>
     </footer>
+    <script></script>
   <script src="./app.js"></script>
   </body>
 </html>

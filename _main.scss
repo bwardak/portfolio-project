@@ -64,9 +64,11 @@
   &__text {
     font: 1.5rem $header-font;
     margin-bottom: 50px;
+    position: relative;
   }
 
   &__project {
+    position: relative;
     height: 295px;
     width: 295px;
     object-fit: cover;
@@ -76,6 +78,7 @@
   }
 
   &__button {
+    position:relative;
     border: 2px none $secondary-color;
     border-radius: 40px;
     width: 55px;
