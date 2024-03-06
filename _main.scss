@@ -41,7 +41,8 @@
 .skills {
   //Skills section not in mobile sizing version
   display: none;
-  height: 100vh;
+  height: 101vh;
+  position: relative;
 }
 
 .portfolio {
@@ -100,10 +101,16 @@
 }
 
 .contact {
+  height: 100vh;
   &__title {
     font: 300 4rem $header-font;
     text-align: center;
     margin-top: 35px;
+  }
+
+  &__text {
+    font: 1rem $paragraph-font;
+    text-align: center;
   }
 
   &__button {
@@ -121,6 +128,18 @@
   .main {
     padding-right: 20px;
   }
+
+//   .main-container {
+//   overflow-y: scroll;
+//   scroll-snap-type: y mandatory;
+//   height: 100vh;
+//   }
+
+// .head-section,
+// .about,
+// .portfolio {
+//   scroll-snap-align: start;
+// }
 
   .about {
     margin-bottom: 310px;
@@ -157,7 +176,7 @@
   }
 
   .skills {
-    display: block;
+    display: inline-block;
 
     &__title {
       font: 600 2.25rem $header-font;
@@ -168,7 +187,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -10px;
+      top: 100%;
       border: 2px solid $secondary-color;
       width: 5.5%;
     }
@@ -179,8 +198,27 @@
     }
 
     &__svg {
-      //give svgs a grid
       fill: $secondary-color;
+      margin: 0 auto ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%; 
+    }
+
+    &__svg:hover {
+      transform: scale(1.2);
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+      transition-delay: 0s;
+      transition-duration: 200ms;
+    }
+
+    &__svg--html5,
+    &__svg--javascript,
+    &__svg--bem,
+    &__svg--java {
+      margin-top: -80px;
     }
   }
 
@@ -196,6 +234,10 @@
       bottom: -10px;
       border: 2px solid $secondary-color;
       width: 6%;
+    }
+
+    &__project {
+      height: 250px;
     }
 
     &__text {
@@ -235,9 +277,11 @@
 
 @media screen and (min-width: 1024px) {
   .about {
+    padding-top: 50px;
     &__title {
       font-size: 2.5rem;
       margin: auto 0;
+      // padding-top: 2rem;
     }
 
     &__title::after {
@@ -253,6 +297,7 @@
       height: auto;
       width: 80%;
       margin: auto auto;
+      margin-top: 50px;
     }
 
     &__info--paragraph-1 {
@@ -267,33 +312,44 @@
   }
 
   .skills {
-    height: 300px;
 
     &__title {
-      margin: 0;
       font-size: 2.5rem;
+      position: relative;
     }
 
     &__title::after {
       content: "";
       position: absolute;
       left: 0;
-      bottom: 35px;
+      bottom: -40px;
       border: 2px solid $secondary-color;
       width: 18.5%;
     }
 
     &__info {
-      margin: 0;
+      margin: 48px 0;
     }
 
     &__svg {
-      margin: 20px auto 0;
+      margin: 0 auto ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      
+    }
+
+    &__svg:hover {
+      transform: scale(1.2);
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
     }
   }
 
   .portfolio {
     padding-right: 30px;
+    height: 101vh;
 
     &__title {
       font-size: 2.5rem;

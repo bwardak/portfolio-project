@@ -13,15 +13,62 @@
 
 .about {
 
+  &__image {
+      transition-delay: filter transform 200ms;
+    }
   &__info--paragraph-1 {
-    transition-delay: 200ms;
+    transition-delay: 400ms;
   }
 
   &__info--paragraph-2 {
-    transition-delay: 400ms;
-  }
-  
-  &__image {
     transition-delay: 600ms;
   }
 }
+
+.skills {
+  &__title {
+    transition-delay:  200ms;
+  }
+
+  &__info {
+    transition-delay: 400ms;
+  }
+
+  &__svg--github {
+    transition-delay: 600ms;
+  }
+  
+  &__svg--html5 {
+    transition-delay: 600ms;
+  }
+
+  &__svg--css3 {
+    transition-delay: 800ms;
+  }
+
+  &__svg--javascript {
+    transition-delay: 800ms;
+  }
+
+  &__svg--scss {
+    transition-delay: 1000ms;
+  }
+
+  &__svg--bem {
+    transition-delay: 1000ms;
+  }
+
+  &__svg--react {
+    transition-delay: 1200ms;
+  }
+
+  &__svg--java {
+    transition-delay: 1200ms;
+  }
+
+  &__svg--springboot {
+    transition-delay: 1400ms;
+  }
+}
+
+

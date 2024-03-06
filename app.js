@@ -14,3 +14,9 @@ const observer = new IntersectionObserver((entries) => {
 
 const scrollElements = document.querySelectorAll('.scroll-fade');
 scrollElements.forEach((el) => observer.observe(el));
+
+
+// function toggle(){                 Code to make more button expand
+//   var blur = document.getElementsByClassName('blur');
+//   blur.classList.toggle('active')
+// }
