@@ -5,6 +5,7 @@
 @use "./main" as *;
 @use "./footer" as *;
 @use "./animation" as *;
+@use "./popup" as *;
 
 body {
   background-color: $primary-color; //Coffee theme

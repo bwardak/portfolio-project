@@ -1057,7 +1057,6 @@ body .footer {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -40px;
     border: 2px solid #DFB78C;
     width: 18.5%;
   }
@@ -1279,6 +1278,75 @@ body .footer {
   transition-delay: 1400ms;
 }
 
+.main#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
+}
+
+#popup__projectone {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: #DFB78C;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  color: #42322b;
+}
+#popup__projectone .portfolio__button {
+  background-color: #42322b;
+  color: #DFB78C;
+}
+
+#popup__projectone.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#popup__buttonone {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: #DFB78C;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  color: #42322b;
+}
+#popup__buttonone .portfolio__button {
+  background-color: #42322b;
+  color: #DFB78C;
+}
+#popup__buttonone .portfolio__button--git {
+  width: 80px;
+}
+
+#popup__buttonone.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  #popup__projectone {
+    width: 600px;
+  }
+}
 .main#blur.active {
   filter: blur(20px);
   pointer-events: none;
