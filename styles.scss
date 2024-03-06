@@ -4,6 +4,7 @@
 @use './grid' as *;
 @use './main' as *;
 @use './footer' as *;
+@use './animation' as *;
 
 body {
   background-color: $primary-color;  //Coffee theme
@@ -12,6 +13,13 @@ body {
   margin: 0;
   max-width: 2560px;
   max-height: 4093px;
+  position: relative;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-section {
+  scroll-snap-align: start;
 }
 
 header,
